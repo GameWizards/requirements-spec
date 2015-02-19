@@ -2,6 +2,8 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{cite}
+\usepackage{mdframed}
+
 \begin{document}
 \title{CSE326 Semester Project Requirement Spec: Anttris}
 \author{Chris Aikman\\Benji Cope\\Skyler Manzanares\\Hugo Rivera\\Sean Turner}
@@ -21,26 +23,26 @@ One central game concept to Anttris is the ability to creat your own puzzle bloc
 \subsection{Supplementary Requirements}
 % customer reqs
 \subsubsection{Interface Requirements}
-To make our video game easy to use, it is required that the user interface 
-provide intuitive interaction. To be able to make our game accessible to 
-the standard user, we have adopted as a requirement that standard 
+To make our video game easy to use, it is required that the user interface
+provide intuitive interaction. To be able to make our game accessible to
+the standard user, we have adopted as a requirement that standard
 input devices -- namely a mouse -- be supported.
 
-Graphical User Interfaces are to be simplistic, and not provide an overwhelming 
-volume of functionallity. Menu systems should contain no more than five (5) 
-functional options. Menus should follow a logical tree and \textsl{aid} in 
+Graphical User Interfaces are to be simplistic, and not provide an overwhelming
+volume of functionallity. Menu systems should contain no more than five (5)
+functional options. Menus should follow a logical tree and \textsl{aid} in
 game navigation.
 \subsubsection{Performance Requirements}
-As Anttris is to be professional-grade software, it is both necessary and 
-sufficient that it run quickly. As is the standard for video-games, Anttris 
-will deliver a minimum of 30 frames per second, and a max of 60 frames per 
-second. Any speed outside of this range on a modern-day computer is hereby 
+As Anttris is to be professional-grade software, it is both necessary and
+sufficient that it run quickly. As is the standard for video-games, Anttris
+will deliver a minimum of 30 frames per second, and a max of 60 frames per
+second. Any speed outside of this range on a modern-day computer is hereby
 defined unacceptable.
 
 %How do we define a modern day computer? regular old office computer?
-As previously mentioned, Anttris is designed to be a game available to a common 
-computer user. To this end, the game is required to meet the above-defined 
-speed standard when tested on computers commonly used in a traditional office 
+As previously mentioned, Anttris is designed to be a game available to a common
+computer user. To this end, the game is required to meet the above-defined
+speed standard when tested on computers commonly used in a traditional office
 workspace whose primary purpose is word-processing and web browsing.
 \section{Customer Requirements}
 % reqs analysis
@@ -52,6 +54,26 @@ workspace whose primary purpose is word-processing and web browsing.
 
 % customer reqs
 \section{Customer Requirements}
+\subsection{User-Case Diagrams}
+\subsection{Actor Descriptions}
+\subsection{Use-case Descriptions}
+\begin{mdframed}
+    \subsubsection{Host match}
+    \begin{description}
+        \item[Entry conditions] Internet connection
+        \item[Exit conditions] None. Will go back to game menu.
+        \item[Participating Actors] Online player and local player
+        \item[Flow of events]:
+            \begin{enumerate}
+                \item User creates a game, selects number of players and game
+                    type
+                \item User shares (friendly looking) match ID with other
+                    players (I’m not sure about this…)
+                \item These players may connect to the match
+                \item The game ends when all players disconnect.
+            \end{enumerate}
+    \end{description}
+\end{mdframed}
 
 % reqs analysis
 \section{Requirements Analysis}
@@ -70,3 +92,10 @@ workspace whose primary purpose is word-processing and web browsing.
 
 \subsection{Project Status}
 \end{document}
+
+
+
+
+
+
+
