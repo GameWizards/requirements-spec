@@ -1,2 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_9HZS8LfgEeS-U__03QH-lQ" name="model"/>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_9HZS8LfgEeS-U__03QH-lQ" name="model">
+  <packagedElement xmi:type="uml:Actor" xmi:id="_7m8QALfkEeSkU9e1bbm4IA" name="Local player"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_OLphULflEeSkU9e1bbm4IA" name="Quit"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_PcihcLflEeSkU9e1bbm4IA" name="Offline Game">
+    <include xmi:type="uml:Include" xmi:id="_wKEuoLflEeSkU9e1bbm4IA" addition="_fHVmYLflEeSkU9e1bbm4IA"/>
+    <include xmi:type="uml:Include" xmi:id="_wlAXILflEeSkU9e1bbm4IA" addition="_hQOlgLflEeSkU9e1bbm4IA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_bF8NgLflEeSkU9e1bbm4IA" name="Join Match">
+    <include xmi:type="uml:Include" xmi:id="_uwUtcLflEeSkU9e1bbm4IA" addition="_fHVmYLflEeSkU9e1bbm4IA"/>
+    <include xmi:type="uml:Include" xmi:id="_vlL44LflEeSkU9e1bbm4IA" addition="_hQOlgLflEeSkU9e1bbm4IA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_b6YiMLflEeSkU9e1bbm4IA" name="Host Match"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_fHVmYLflEeSkU9e1bbm4IA" name="Edit/Create Puzzle">
+    <include xmi:type="uml:Include" xmi:id="_xunDgLflEeSkU9e1bbm4IA" addition="_ieJxMLflEeSkU9e1bbm4IA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_hQOlgLflEeSkU9e1bbm4IA" name="Solve Puzzle">
+    <include xmi:type="uml:Include" xmi:id="_xNprgLflEeSkU9e1bbm4IA" addition="_ieJxMLflEeSkU9e1bbm4IA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_ieJxMLflEeSkU9e1bbm4IA" name="Navigate Puzzle"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_nRvcALflEeSkU9e1bbm4IA" name="Online Player"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_o3Lv0LflEeSkU9e1bbm4IA" name="" memberEnd="_o3Lv0bflEeSkU9e1bbm4IA _o3Lv1LflEeSkU9e1bbm4IA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_o3Lv0bflEeSkU9e1bbm4IA" name="online player" type="_nRvcALflEeSkU9e1bbm4IA" association="_o3Lv0LflEeSkU9e1bbm4IA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_o3Lv0rflEeSkU9e1bbm4IA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_o3Lv07flEeSkU9e1bbm4IA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_o3Lv1LflEeSkU9e1bbm4IA" name="host match" type="_b6YiMLflEeSkU9e1bbm4IA" association="_o3Lv0LflEeSkU9e1bbm4IA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_o3Lv1bflEeSkU9e1bbm4IA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_o3Lv1rflEeSkU9e1bbm4IA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_pp8CcLflEeSkU9e1bbm4IA" name="" memberEnd="_pp8CcbflEeSkU9e1bbm4IA _pp8CdLflEeSkU9e1bbm4IA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_pp8CcbflEeSkU9e1bbm4IA" name="online player" type="_nRvcALflEeSkU9e1bbm4IA" association="_pp8CcLflEeSkU9e1bbm4IA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pp8CcrflEeSkU9e1bbm4IA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pp8Cc7flEeSkU9e1bbm4IA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_pp8CdLflEeSkU9e1bbm4IA" name="join match" type="_bF8NgLflEeSkU9e1bbm4IA" association="_pp8CcLflEeSkU9e1bbm4IA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pp8CdbflEeSkU9e1bbm4IA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pp8CdrflEeSkU9e1bbm4IA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_qUD9gLflEeSkU9e1bbm4IA" memberEnd="_qUD9gbflEeSkU9e1bbm4IA _qUD9hLflEeSkU9e1bbm4IA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_qUD9gbflEeSkU9e1bbm4IA" name="local player" type="_7m8QALfkEeSkU9e1bbm4IA" association="_qUD9gLflEeSkU9e1bbm4IA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qUD9grflEeSkU9e1bbm4IA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qUD9g7flEeSkU9e1bbm4IA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_qUD9hLflEeSkU9e1bbm4IA" name="host match" type="_b6YiMLflEeSkU9e1bbm4IA" association="_qUD9gLflEeSkU9e1bbm4IA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qUD9hbflEeSkU9e1bbm4IA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qUD9hrflEeSkU9e1bbm4IA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_rOXpoLflEeSkU9e1bbm4IA" name="" memberEnd="_rOXpobflEeSkU9e1bbm4IA _rOXppLflEeSkU9e1bbm4IA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_rOXpobflEeSkU9e1bbm4IA" name="local player" type="_7m8QALfkEeSkU9e1bbm4IA" association="_rOXpoLflEeSkU9e1bbm4IA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rOXporflEeSkU9e1bbm4IA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rOXpo7flEeSkU9e1bbm4IA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_rOXppLflEeSkU9e1bbm4IA" name="join match" type="_bF8NgLflEeSkU9e1bbm4IA" association="_rOXpoLflEeSkU9e1bbm4IA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rOXppbflEeSkU9e1bbm4IA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rOXpprflEeSkU9e1bbm4IA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_sQyv8LflEeSkU9e1bbm4IA" name="" memberEnd="_sQyv8bflEeSkU9e1bbm4IA _sQyv9LflEeSkU9e1bbm4IA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_sQyv8bflEeSkU9e1bbm4IA" name="local player" type="_7m8QALfkEeSkU9e1bbm4IA" association="_sQyv8LflEeSkU9e1bbm4IA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sQyv8rflEeSkU9e1bbm4IA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sQyv87flEeSkU9e1bbm4IA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_sQyv9LflEeSkU9e1bbm4IA" name="offline game" type="_PcihcLflEeSkU9e1bbm4IA" association="_sQyv8LflEeSkU9e1bbm4IA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sQyv9bflEeSkU9e1bbm4IA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sQyv9rflEeSkU9e1bbm4IA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_s-IXELflEeSkU9e1bbm4IA" name="" memberEnd="_s-IXEbflEeSkU9e1bbm4IA _s-IXFLflEeSkU9e1bbm4IA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_s-IXEbflEeSkU9e1bbm4IA" name="local player" type="_7m8QALfkEeSkU9e1bbm4IA" association="_s-IXELflEeSkU9e1bbm4IA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s-IXErflEeSkU9e1bbm4IA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s-IXE7flEeSkU9e1bbm4IA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_s-IXFLflEeSkU9e1bbm4IA" name="quit" type="_OLphULflEeSkU9e1bbm4IA" association="_s-IXELflEeSkU9e1bbm4IA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s-IXFbflEeSkU9e1bbm4IA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s-IXFrflEeSkU9e1bbm4IA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>
