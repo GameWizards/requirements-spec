@@ -3,7 +3,7 @@
   <packageImport xmi:type="uml:PackageImport" xmi:id="_lPQfgbfoEeSkU9e1bbm4IA">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
-  <packagedElement xmi:type="uml:Interaction" xmi:id="_lPyrALfoEeSkU9e1bbm4IA" name="Interaction1">
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_lPyrALfoEeSkU9e1bbm4IA" name="Navigate Puzzle">
     <ownedBehavior xmi:type="uml:Interaction" xmi:id="_DTCmwLfqEeSkU9e1bbm4IA" name="Interaction1">
       <ownedBehavior xmi:type="uml:Interaction" xmi:id="_DTCmwbfqEeSkU9e1bbm4IA" name="Interaction1">
         <lifeline xmi:type="uml:Lifeline" xmi:id="_DTCmwrfqEeSkU9e1bbm4IA" name="Quit Button" coveredBy="_DTCmyLfqEeSkU9e1bbm4IA _DTCmzrfqEeSkU9e1bbm4IA _DTCmybfqEeSkU9e1bbm4IA _DTCmzLfqEeSkU9e1bbm4IA _DTCmy7fqEeSkU9e1bbm4IA"/>
@@ -64,20 +64,15 @@
       <message xmi:type="uml:Message" xmi:id="_DTCm-LfqEeSkU9e1bbm4IA" name="Press ESC or Alt-F4 or any acceptable exit keys" messageSort="asynchCall" receiveEvent="_DTCm8LfqEeSkU9e1bbm4IA" sendEvent="_DTCm77fqEeSkU9e1bbm4IA"/>
       <message xmi:type="uml:Message" xmi:id="_DTCm-bfqEeSkU9e1bbm4IA" name="Press" messageSort="asynchCall" receiveEvent="_DTCm57fqEeSkU9e1bbm4IA" sendEvent="_DTCm5rfqEeSkU9e1bbm4IA"/>
     </ownedBehavior>
-    <lifeline xmi:type="uml:Lifeline" xmi:id="_yvNdgLfoEeSkU9e1bbm4IA" name="Quit Button" coveredBy="_jdWnkLfpEeSkU9e1bbm4IA _jdYcwLfpEeSkU9e1bbm4IA _jdX1sLfpEeSkU9e1bbm4IA _lQsNcLfpEeSkU9e1bbm4IA _8uoekLfpEeSkU9e1bbm4IA"/>
     <lifeline xmi:type="uml:Lifeline" xmi:id="_1X1soLfoEeSkU9e1bbm4IA" name="Event catcher" coveredBy="_aIqwILfpEeSkU9e1bbm4IA _cF2OgLfpEeSkU9e1bbm4IA _cF4DsLfpEeSkU9e1bbm4IA _cF3coLfpEeSkU9e1bbm4IA _nu9msLfpEeSkU9e1bbm4IA _4LHQELfpEeSkU9e1bbm4IA"/>
     <lifeline xmi:type="uml:Lifeline" xmi:id="_5MbYkLfoEeSkU9e1bbm4IA" name="Main Node" coveredBy="_aIrXMLfpEeSkU9e1bbm4IA _lQtbkLfpEeSkU9e1bbm4IA _nu-NwLfpEeSkU9e1bbm4IA"/>
     <lifeline xmi:type="uml:Lifeline" xmi:id="_sYpuoLfpEeSkU9e1bbm4IA" name="Local Player (Actor)" coveredBy="_yGIO0LfpEeSkU9e1bbm4IA _yGJc8bfpEeSkU9e1bbm4IA _yGJc8LfpEeSkU9e1bbm4IA _4LGB8LfpEeSkU9e1bbm4IA _8un3gLfpEeSkU9e1bbm4IA"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_8un3gLfpEeSkU9e1bbm4IA" name="MessageSend4" covered="_sYpuoLfpEeSkU9e1bbm4IA" message="_8umpYLfpEeSkU9e1bbm4IA"/>
-    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_jdYcwLfpEeSkU9e1bbm4IA" name="ActionExecSpec0Finish" covered="_yvNdgLfoEeSkU9e1bbm4IA" execution="_jdX1sLfpEeSkU9e1bbm4IA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_8un3gLfpEeSkU9e1bbm4IA" name="MessageSend4" covered="_sYpuoLfpEeSkU9e1bbm4IA"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_nu9msLfpEeSkU9e1bbm4IA" name="MessageSend2" covered="_1X1soLfoEeSkU9e1bbm4IA" message="_nu8YkLfpEeSkU9e1bbm4IA"/>
-    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_jdWnkLfpEeSkU9e1bbm4IA" name="ActionExecSpec0Start" covered="_yvNdgLfoEeSkU9e1bbm4IA" execution="_jdX1sLfpEeSkU9e1bbm4IA"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_8uoekLfpEeSkU9e1bbm4IA" name="MessageRecv4" covered="_yvNdgLfoEeSkU9e1bbm4IA" message="_8umpYLfpEeSkU9e1bbm4IA"/>
     <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_yGJc8bfpEeSkU9e1bbm4IA" name="ActionExecSpec1Finish" covered="_sYpuoLfpEeSkU9e1bbm4IA" execution="_yGJc8LfpEeSkU9e1bbm4IA"/>
     <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_cF4DsLfpEeSkU9e1bbm4IA" name="ActionExecSpecFinish" covered="_1X1soLfoEeSkU9e1bbm4IA" execution="_cF3coLfpEeSkU9e1bbm4IA"/>
     <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_cF2OgLfpEeSkU9e1bbm4IA" name="ActionExecSpecStart" covered="_1X1soLfoEeSkU9e1bbm4IA" execution="_cF3coLfpEeSkU9e1bbm4IA"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_lQsNcLfpEeSkU9e1bbm4IA" name="MessageSend1" covered="_yvNdgLfoEeSkU9e1bbm4IA" message="_lQq_ULfpEeSkU9e1bbm4IA"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_lQtbkLfpEeSkU9e1bbm4IA" name="MessageRecv1" covered="_5MbYkLfoEeSkU9e1bbm4IA" message="_lQq_ULfpEeSkU9e1bbm4IA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_lQtbkLfpEeSkU9e1bbm4IA" name="MessageRecv1" covered="_5MbYkLfoEeSkU9e1bbm4IA"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_nu-NwLfpEeSkU9e1bbm4IA" name="MessageRecv2" covered="_5MbYkLfoEeSkU9e1bbm4IA" message="_nu8YkLfpEeSkU9e1bbm4IA"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_4LHQELfpEeSkU9e1bbm4IA" name="MessageRecv3" covered="_1X1soLfoEeSkU9e1bbm4IA" message="_4LEMwLfpEeSkU9e1bbm4IA"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_aIqwILfpEeSkU9e1bbm4IA" name="MessageSend0" covered="_1X1soLfoEeSkU9e1bbm4IA" message="_aIpiALfpEeSkU9e1bbm4IA"/>
@@ -85,12 +80,9 @@
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_aIrXMLfpEeSkU9e1bbm4IA" name="MessageRecv0" covered="_5MbYkLfoEeSkU9e1bbm4IA" message="_aIpiALfpEeSkU9e1bbm4IA"/>
     <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_yGJc8LfpEeSkU9e1bbm4IA" name="ActionExecSpec1" covered="_sYpuoLfpEeSkU9e1bbm4IA" finish="_yGJc8bfpEeSkU9e1bbm4IA" start="_yGIO0LfpEeSkU9e1bbm4IA"/>
     <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_yGIO0LfpEeSkU9e1bbm4IA" name="ActionExecSpec1Start" covered="_sYpuoLfpEeSkU9e1bbm4IA" execution="_yGJc8LfpEeSkU9e1bbm4IA"/>
-    <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_jdX1sLfpEeSkU9e1bbm4IA" name="ActionExecSpec0" covered="_yvNdgLfoEeSkU9e1bbm4IA" finish="_jdYcwLfpEeSkU9e1bbm4IA" start="_jdWnkLfpEeSkU9e1bbm4IA"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_4LGB8LfpEeSkU9e1bbm4IA" name="MessageSend3" covered="_sYpuoLfpEeSkU9e1bbm4IA" message="_4LEMwLfpEeSkU9e1bbm4IA"/>
     <message xmi:type="uml:Message" xmi:id="_aIpiALfpEeSkU9e1bbm4IA" name="quit()" messageSort="asynchCall" receiveEvent="_aIrXMLfpEeSkU9e1bbm4IA" sendEvent="_aIqwILfpEeSkU9e1bbm4IA"/>
-    <message xmi:type="uml:Message" xmi:id="_lQq_ULfpEeSkU9e1bbm4IA" name="quit()" messageSort="asynchCall" receiveEvent="_lQtbkLfpEeSkU9e1bbm4IA" sendEvent="_lQsNcLfpEeSkU9e1bbm4IA"/>
     <message xmi:type="uml:Message" xmi:id="_nu8YkLfpEeSkU9e1bbm4IA" name="quit()" messageSort="asynchCall" receiveEvent="_nu-NwLfpEeSkU9e1bbm4IA" sendEvent="_nu9msLfpEeSkU9e1bbm4IA"/>
     <message xmi:type="uml:Message" xmi:id="_4LEMwLfpEeSkU9e1bbm4IA" name="Press ESC or Alt-F4 or any acceptable exit keys" messageSort="asynchCall" receiveEvent="_4LHQELfpEeSkU9e1bbm4IA" sendEvent="_4LGB8LfpEeSkU9e1bbm4IA"/>
-    <message xmi:type="uml:Message" xmi:id="_8umpYLfpEeSkU9e1bbm4IA" name="Press" messageSort="asynchCall" receiveEvent="_8uoekLfpEeSkU9e1bbm4IA" sendEvent="_8un3gLfpEeSkU9e1bbm4IA"/>
   </packagedElement>
 </uml:Model>
