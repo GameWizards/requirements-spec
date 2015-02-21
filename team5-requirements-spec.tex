@@ -2,11 +2,11 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{cite}
-\usepackage{mdframed}
+%\usepackage{mdframed}
 \usepackage{float} % for [H] anchoring method
 
 \graphicspath{ {pngs/} }
-\mdfsetup{nobreak=true}
+%\mdfsetup{nobreak=true}
 
 \begin{document}
 \title{CSE326 Semester Project Requirement Spec: Anttris}
@@ -72,7 +72,8 @@ workspace whose primary purpose is word-processing and web browsing.
 \subsection{Actor Descriptions}
 
 \subsection{Use-case Descriptions}
-\begin{mdframed}
+
+%\begin{mdframed}
     \subsubsection{Host match}
     \begin{description}
         \item[Entry conditions] Internet connection
@@ -88,7 +89,122 @@ workspace whose primary purpose is word-processing and web browsing.
                 \item The game ends when all players disconnect.
             \end{enumerate}
     \end{description}
-\end{mdframed}
+%\end{mdframed}
+
+%\begin{mdframed}
+    \subsubsection{Join match}
+    \begin{description}
+        \item[Entry conditions] Internet connection
+        \item[Exit conditions] None. Will go back to game menu.
+        \item[Participating Actors] Online player and local player
+        \item[Flow of events]:
+            \begin{enumerate}
+                \item User creates a game, selects number of players and game
+                    type
+                \item User shares (friendly looking) match ID with other
+                    players (I’m not sure about this…)
+                \item These players may connect to the match
+                \item The game ends when all players disconnect.
+            \end{enumerate}
+    \end{description}
+%\end{mdframed}
+
+
+%\begin{mdframed}
+    \subsubsection{Edit puzzle}
+    \begin{description}
+        \item[Entry conditions] Internet connection
+        \item[Exit conditions] None. Will go back to game menu.
+        \item[Participating Actors] Online player and local player
+        \item[Flow of events]:
+            \begin{enumerate}
+                \item User creates a game, selects number of players and game
+                    type
+                \item User shares (friendly looking) match ID with other
+                    players (I’m not sure about this…)
+                \item These players may connect to the match
+                \item The game ends when all players disconnect.
+            \end{enumerate}
+    \end{description}
+%\end{mdframed}
+
+
+%\begin{mdframed}
+    \subsubsection{Solve puzzle}
+    \begin{description}
+        \item[Entry conditions] Internet connection
+        \item[Exit conditions] None. Will go back to game menu.
+        \item[Participating Actors] Online player and local player
+        \item[Flow of events]:
+            \begin{enumerate}
+                \item User creates a game, selects number of players and game
+                    type
+                \item User shares (friendly looking) match ID with other
+                    players (I’m not sure about this…)
+                \item These players may connect to the match
+                \item The game ends when all players disconnect.
+            \end{enumerate}
+    \end{description}
+%\end{mdframed}
+
+
+%\begin{mdframed}
+    \subsubsection{Navigate puzzle}
+    \begin{description}
+        \item[Entry conditions] Internet connection
+        \item[Exit conditions] None. Will go back to game menu.
+        \item[Participating Actors] Online player and local player
+        \item[Flow of events]:
+            \begin{enumerate}
+                \item User creates a game, selects number of players and game
+                    type
+                \item User shares (friendly looking) match ID with other
+                    players (I’m not sure about this…)
+                \item These players may connect to the match
+                \item The game ends when all players disconnect.
+            \end{enumerate}
+    \end{description}
+%\end{mdframed}
+
+
+%\begin{mdframed}
+    \subsubsection{Host match}
+    \begin{description}
+        \item[Entry conditions] Internet connection
+        \item[Exit conditions] None. Will go back to game menu.
+        \item[Participating Actors] Online player and local player
+        \item[Flow of events]:
+            \begin{enumerate}
+                \item User creates a game, selects number of players and game
+                    type
+                \item User shares (friendly looking) match ID with other
+                    players (I’m not sure about this…)
+                \item These players may connect to the match
+                \item The game ends when all players disconnect.
+            \end{enumerate}
+    \end{description}
+%\end{mdframed}
+
+
+%\begin{mdframed}
+    \subsubsection{Host match}
+    \begin{description}
+        \item[Entry conditions] Internet connection
+        \item[Exit conditions] None. Will go back to game menu.
+        \item[Participating Actors] Online player and local player
+        \item[Flow of events]:
+            \begin{enumerate}
+                \item User creates a game, selects number of players and game
+                    type
+                \item User shares (friendly looking) match ID with other
+                    players (I’m not sure about this…)
+                \item These players may connect to the match
+                \item The game ends when all players disconnect.
+            \end{enumerate}
+    \end{description}
+%\end{mdframed}
+
+
 
 % reqs analysis
 %\section{Requirements Analysis}\label{reqs-analysis-BC}
