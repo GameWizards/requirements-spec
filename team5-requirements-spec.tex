@@ -3,7 +3,10 @@
 \usepackage{hyperref}
 \usepackage{cite}
 \usepackage{mdframed}
+\usepackage{float} % for [H] anchoring method
+
 \graphicspath{ {pngs/} }
+\mdfsetup{nobreak=true}
 
 \begin{document}
 \title{CSE326 Semester Project Requirement Spec: Anttris}
@@ -60,7 +63,14 @@ workspace whose primary purpose is word-processing and web browsing.
 
 \section{Customer Requirements}\label{cust-reqs-HR}
 \subsection{User-Case Diagrams}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=6in]{use_cases.png}
+        \caption{Use Case Diagram}
+    \end{figure}
+
 \subsection{Actor Descriptions}
+
 \subsection{Use-case Descriptions}
 \begin{mdframed}
     \subsubsection{Host match}
@@ -94,10 +104,66 @@ workspace whose primary purpose is word-processing and web browsing.
 
 \subsection{Behavioral Analysis}\label{behavioral-analysis-HR}
 
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=6in]{sequence_host_match.png}
+        \caption{UML Sequence Diagram for hosting a multiplayer game}
+    \end{figure}
+
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=6in]{sequence_join_match.png}
+        \caption{UML Sequence Diagram for joining a multiplayer game}
+    \end{figure}
+
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=6in]{sequence_edit.png}
+        \caption{UML Sequence Diagram for editing or creating a puzzle}
+    \end{figure}
+
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=6in]{sequence_solve.png}
+        \caption{UML Sequence Diagram for the puzzle solving process}
+    \end{figure}
+
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=6in]{sequence_navigate_puzzle.png}
+        \caption{UML Sequence Diagram for navigating a puzzle in either edit or
+        solve mode}
+    \end{figure}
+
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=6in]{sequence_offline_play.png}
+        \caption{UML Sequence Diagram for an offline game}
+    \end{figure}
+
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=6in]{sequence_quit.png}
+        \caption{UML Sequence Diagram demonstrating game-shutdown}
+    \end{figure}
+
+
+
+
 \subsection{User Interface Analysis}\label{UI-analysis-CA}
 The user interface in Anttris will follow the design of most simple game interfaces. It will include a main menu, configuration menu, play menu, editor interface and game interface. All of these will be connected to each other through the use of buttons on the screen that can be pressed with a mouse, a finger on a touch device and perhaps, with enough time, a game controller. Included below are flow diagrams for the user interface as well as initial design ideas for each individual interface.\\
 \\
-\includegraphics[width=6in]{UIFlow}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=6in]{UIFlow.png}
+        \caption{Flow Diagram for UI}
+    \end{figure}
 
 % validation and criteria
 \section{Validation and Criteria}\label{validation-BC}
@@ -107,20 +173,20 @@ The user interface in Anttris will follow the design of most simple game interfa
 
 \subsection{Project Status}\label{status-ST}
 
-Much progress has been made. We have a working Javascript prototype, a 
-workable timeline for Scrum, and we have begun our first sprint. The 
-primary objective of this first sprint is to convert the prototype 
-into project for the Godot game engine \cite{godot:gameengine}. 
+Much progress has been made. We have a working Javascript prototype, a
+workable timeline for Scrum, and we have begun our first sprint. The
+primary objective of this first sprint is to convert the prototype
+into project for the Godot game engine \cite{godot:gameengine}.
 
-Currently, we plan to have four sprints of two weeks duration each, 
-with weekends acting as slack days. Due to scheduling, the first 
-sprint is slightly longer than two weeks, so we plan to do more to 
+Currently, we plan to have four sprints of two weeks duration each,
+with weekends acting as slack days. Due to scheduling, the first
+sprint is slightly longer than two weeks, so we plan to do more to
 offset the projected downtime during spring break. Sean has taken on the job of coordinating the team as Scrum Master.
 
-Our team also has solid organization and collaboration thanks to various tools, including Github for our git repositories \cite{github:site}, Zenhub for integrated Agile project management in Github \cite{zenhub:site}, Slack for team collaboration \cite{slack:site}, and Travis CI for continuous integration \cite{travis:site}. 
+Our team also has solid organization and collaboration thanks to various tools, including Github for our git repositories \cite{github:site}, Zenhub for integrated Agile project management in Github \cite{zenhub:site}, Slack for team collaboration \cite{slack:site}, and Travis CI for continuous integration \cite{travis:site}.
 
 
-\begin{table}[h]
+\begin{table}[H]
 \centering
 \begin{tabular}{|l|l|l|l|l|}
 \hline

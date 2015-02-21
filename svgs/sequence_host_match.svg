@@ -15,7 +15,7 @@
    version="1.1"
    inkscape:version="0.48.5 r10040"
    sodipodi:docname="sequence_host_match.svg"
-   inkscape:export-filename="/home/croh/Dropbox/classes/CSE326/requirements-spec/pngs/sequence_join_match.png"
+   inkscape:export-filename="/home/croh/Dropbox/classes/CSE326/requirements-spec/pngs/sequence_host_match.png"
    inkscape:export-xdpi="400"
    inkscape:export-ydpi="400">
   <defs
@@ -48,7 +48,7 @@
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1361"
+     inkscape:window-width="1246"
      inkscape:window-height="1061"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -90,7 +90,7 @@
        transform="translate(29.235236,-4.6767701)"
        style="stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none">
       <path
-         d="m 25.885159,47.386669 a 7.4498749,7.4498749 0 1 1 -14.89975,0 7.4498749,7.4498749 0 1 1 14.89975,0 z"
+         d="m 25.885159,47.386669 c 0,4.114452 -3.335423,7.449875 -7.449875,7.449875 -4.114453,0 -7.449875,-3.335423 -7.449875,-7.449875 0,-4.114452 3.335422,-7.449875 7.449875,-7.449875 4.114452,0 7.449875,3.335423 7.449875,7.449875 z"
          sodipodi:ry="7.4498749"
          sodipodi:rx="7.4498749"
          sodipodi:cy="47.386669"
