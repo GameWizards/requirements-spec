@@ -2,11 +2,10 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{cite}
-%MDFRAMED%\usepackage{mdframed}
 \usepackage{float} % for [H] anchoring method
-
-
+\renewcommand{\thesubsubsection}{} % no subsubsection numbers
 \graphicspath{ {pngs/} }
+%MDFRAMED%\usepackage{mdframed}
 %MDFRAMED%\mdfsetup{nobreak=true}
 
 \begin{document}
@@ -72,14 +71,17 @@ workspace whose primary purpose is word-processing and web browsing.
 
 \subsection{Actor Descriptions}
     \begin{description}
-        \item[Local player]
-        \item[Online player]
+        \item[Local player] is somehow in front of the screen and has full
+            access to the mouse and keyboard or touchscreen interface.
+        \item[Online player] is not in front of the game. There is two-way
+            communication between this type of player and the local player.
+            There may be 0 or more online players.
+        \item[The Host] has special powers, may disconnect other players and
+            block players from selecting different puzzles. This player could
+            be Local or Online.
     \end{description}
 
 \subsection{Use-case Descriptions}
-% TODO: remove numbers from display of subsubsections
-% less neurotic look.
-
 %MDFRAMED%\begin{mdframed}
     \subsubsection{Host match}
     \begin{description}
