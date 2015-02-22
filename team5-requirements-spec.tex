@@ -5,6 +5,7 @@
 %MDFRAMED%\usepackage{mdframed}
 \usepackage{float} % for [H] anchoring method
 
+
 \graphicspath{ {pngs/} }
 %MDFRAMED%\mdfsetup{nobreak=true}
 
@@ -76,6 +77,8 @@ workspace whose primary purpose is word-processing and web browsing.
     \end{description}
 
 \subsection{Use-case Descriptions}
+% TODO: remove numbers from display of subsubsections
+% less neurotic look.
 
 %MDFRAMED%\begin{mdframed}
     \subsubsection{Host match}
@@ -97,6 +100,25 @@ workspace whose primary purpose is word-processing and web browsing.
 
 %MDFRAMED%\begin{mdframed}
     \subsubsection{Join match}
+    \begin{description}
+        \item[Entry conditions] Internet connection
+        \item[Exit conditions] None. Will go back to game menu.
+        \item[Participating Actors] Online player and local player
+        \item[Flow of events]:
+            \begin{enumerate}
+                \item User creates a game, selects number of players and game
+                    type
+                \item User shares (friendly looking) match ID with other
+                    players (I’m not sure about this…)
+                \item These players may connect to the match
+                \item The game ends when all players disconnect.
+            \end{enumerate}
+    \end{description}
+%MDFRAMED%\end{mdframed}
+
+
+%MDFRAMED%\begin{mdframed}
+    \subsubsection{Offline game}
     \begin{description}
         \item[Entry conditions] Internet connection
         \item[Exit conditions] None. Will go back to game menu.
@@ -155,55 +177,49 @@ workspace whose primary purpose is word-processing and web browsing.
 %MDFRAMED%\begin{mdframed}
     \subsubsection{Navigate puzzle}
     \begin{description}
-        \item[Entry conditions] Internet connection
-        \item[Exit conditions] None. Will go back to game menu.
+        \item[Entry conditions] Puzzle scene loaded and permission to move.
+            Input devices must be functional.
+        \item[Exit conditions] The game must offer continuous feedback.
+            If the entry conditions are met, any further input must be
+            acted on as soon as possible.
         \item[Participating Actors] Online player and local player
         \item[Flow of events]:
+            Camera motion.
             \begin{enumerate}
-                \item User creates a game, selects number of players and game
-                    type
-                \item User shares (friendly looking) match ID with other
-                    players (I’m not sure about this…)
-                \item These players may connect to the match
-                \item The game ends when all players disconnect.
+                \item User drags with a mouse or touchscreen
+                \item The camera changes position
             \end{enumerate}
+
+            Block selection.
+            \begin{enumerate}
+                \item User clicks with mouse or taps on touchscreen
+                \item The 3D coordinates are translated into a position on
+                    a game ``board.''
+                \item The Grid Manager is notified of input and the grid
+                    position.
+                \item If a block is present there, it is selected and activated.
+                    Exact actions depend on the game mode.
+                \item If a block is not present, the space is selected. This
+                    is only useful in edit mode.
+            \end{enumerate}
+
     \end{description}
 %MDFRAMED%\end{mdframed}
 
 
 %MDFRAMED%\begin{mdframed}
-    \subsubsection{Host match}
+    \subsubsection{Quit}
     \begin{description}
-        \item[Entry conditions] Internet connection
-        \item[Exit conditions] None. Will go back to game menu.
-        \item[Participating Actors] Online player and local player
+        \item[Entry conditions] Game must be running. This action is
+            asynchronous and may activate at any point.
+        \item[Exit conditions] Game, be gone!
+        \item[Participating Actors] Local player
         \item[Flow of events]:
             \begin{enumerate}
-                \item User creates a game, selects number of players and game
-                    type
-                \item User shares (friendly looking) match ID with other
-                    players (I’m not sure about this…)
-                \item These players may connect to the match
-                \item The game ends when all players disconnect.
-            \end{enumerate}
-    \end{description}
-%MDFRAMED%\end{mdframed}
-
-
-%MDFRAMED%\begin{mdframed}
-    \subsubsection{Host match}
-    \begin{description}
-        \item[Entry conditions] Internet connection
-        \item[Exit conditions] None. Will go back to game menu.
-        \item[Participating Actors] Online player and local player
-        \item[Flow of events]:
-            \begin{enumerate}
-                \item User creates a game, selects number of players and game
-                    type
-                \item User shares (friendly looking) match ID with other
-                    players (I’m not sure about this…)
-                \item These players may connect to the match
-                \item The game ends when all players disconnect.
+                \item User presses the quit button on a menu
+                \item or User presses appropriate sequence of keys, such as
+                    the escape key or the alt and F4 combo.
+                \item The program shuts down gracefully.
             \end{enumerate}
     \end{description}
 %MDFRAMED%\end{mdframed}
