@@ -84,16 +84,27 @@ workspace whose primary purpose is word-processing and web browsing.
     \subsubsection{Host match}
     \begin{description}
         \item[Entry conditions] Internet connection
-        \item[Exit conditions] None. Will go back to game menu.
+        \item[Exit conditions] None. Will return to game menu.
         \item[Participating Actors] Online player and local player
         \item[Flow of events]:
             \begin{enumerate}
+                \item The user presses the appropriate menu button.
                 \item User creates a game, selects number of players and game
                     type
                 \item User shares (friendly looking) match ID with other
-                    players (I’m not sure about this…)
-                \item These players may connect to the match
-                \item The game ends when all players disconnect.
+                    players. These players may connect to the match
+                \item Puzzle Selector appears.
+                \item The user may configure the game with this screen.
+                    This
+                    entails choosing a puzzle and a game mode (edit or solve).
+                    Other players can be prevented from making such
+                    modifications.
+                \item This Puzzle Selector will create a Puzzle Scene
+                \item The scene will change from the main menu to the Puzzle
+                    Scene.
+                \item Additional viewports will be added. These show the
+                    progress of online players.
+
             \end{enumerate}
     \end{description}
 %MDFRAMED%\end{mdframed}
@@ -101,17 +112,21 @@ workspace whose primary purpose is word-processing and web browsing.
 %MDFRAMED%\begin{mdframed}
     \subsubsection{Join match}
     \begin{description}
-        \item[Entry conditions] Internet connection
-        \item[Exit conditions] None. Will go back to game menu.
+        \item[Entry conditions] Internet connection. The menu must be present.
+        \item[Exit conditions] Will return to game menu.
         \item[Participating Actors] Online player and local player
         \item[Flow of events]:
             \begin{enumerate}
-                \item User creates a game, selects number of players and game
-                    type
-                \item User shares (friendly looking) match ID with other
-                    players (I’m not sure about this…)
-                \item These players may connect to the match
-                \item The game ends when all players disconnect.
+                \item The user presses the appropriate menu button.
+                \item Puzzle Selector appears.
+                \item The user may configure the game with this screen, if
+                    the game host allows it. This would
+                    entail choosing a puzzle and a game mode (edit or solve).
+                \item This Puzzle Selector will create a Puzzle Scene
+                \item The scene will change from the main menu to the Puzzle
+                    Scene.
+                \item Additional viewports will be added. These show the
+                    progress of online players.
             \end{enumerate}
     \end{description}
 %MDFRAMED%\end{mdframed}
@@ -120,17 +135,18 @@ workspace whose primary purpose is word-processing and web browsing.
 %MDFRAMED%\begin{mdframed}
     \subsubsection{Offline game}
     \begin{description}
-        \item[Entry conditions] Internet connection
-        \item[Exit conditions] None. Will go back to game menu.
-        \item[Participating Actors] Online player and local player
+        \item[Entry conditions] Menu must be present.
+        \item[Exit conditions] Will return to game menu.
+        \item[Participating Actors] Local player
         \item[Flow of events]:
             \begin{enumerate}
-                \item User creates a game, selects number of players and game
-                    type
-                \item User shares (friendly looking) match ID with other
-                    players (I’m not sure about this…)
-                \item These players may connect to the match
-                \item The game ends when all players disconnect.
+                \item User selects the appropriate menu button.
+                \item Puzzle Selector appears.
+                \item The user may configure the game with this screen. This
+                    entails choosing a puzzle and a game mode (edit or solve).
+                \item This Puzzle Selector will create a Puzzle Scene
+                \item The scene will change from the main menu to the Puzzle
+                    Scene.
             \end{enumerate}
     \end{description}
 %MDFRAMED%\end{mdframed}
@@ -139,18 +155,30 @@ workspace whose primary purpose is word-processing and web browsing.
 %MDFRAMED%\begin{mdframed}
     \subsubsection{Edit puzzle}
     \begin{description}
-        \item[Entry conditions] A puzzle scene must be loaded and edit mode
+        \item[Entry conditions] A Puzzle Scene must be loaded and edit mode
             must be activated.
-        \item[Exit conditions] None. Will go back to game menu.
-        \item[Participating Actors] Online player and local player
+        \item[Exit conditions] Will return to game menu. The puzzle may be
+            saved to the disk.
+        \item[Participating Actors] Online player or local player
         \item[Flow of events]:
             \begin{enumerate}
-                \item User creates a game, selects number of players and game
-                    type
-                \item User shares (friendly looking) match ID with other
-                    players (I’m not sure about this…)
-                \item These players may connect to the match
-                \item The game ends when all players disconnect.
+                \item The user navigates the puzzle
+                \item If a position on the grid is selected, the Block Modifier
+                    is presented. This position may be empty or it may
+                    contain a block.
+                \item The user may change properties of the block using this
+                    screen.
+                \item Blocks may be added or removed using this same screen.
+                \item
+            \end{enumerate}
+            Puzzle preview:
+            \begin{enumerate}
+                \item User may press the preview button
+                \item The user will try the puzzle in Solve Puzzle mode until
+                    that mode's exit conditions are met.
+                    A special banner will graphically indicate preview mode.
+                \item The solving scene will have a special button for
+                    returning to the editing scene
             \end{enumerate}
     \end{description}
 %MDFRAMED%\end{mdframed}
@@ -159,19 +187,26 @@ workspace whose primary purpose is word-processing and web browsing.
 %MDFRAMED%\begin{mdframed}
     \subsubsection{Solve puzzle}
     \begin{description}
-        \item[Entry conditions] A puzzle scene must be loaded and solve mode
+        \item[Entry conditions] A Puzzle Scene must be loaded and solve mode
             must be activated.
-        \item[Exit conditions] Will go back to game menu. If the game is
-            over, an overview of results is shown and
-        \item[Participating Actors] Online player and local player
+        \item[Exit conditions] Will return to game menu or puzzle editor.
+            If the game is
+            over, an overview of results will be shown and the steps taken to solve
+            the puzzle may be saved to the disk.
+        \item[Participating Actors] Online player or local player
         \item[Flow of events]:
             \begin{enumerate}
-                \item User creates a game, selects number of players and game
-                    type
-                \item User shares (friendly looking) match ID with other
-                    players (I’m not sure about this…)
-                \item These players may connect to the match
-                \item The game ends when all players disconnect.
+                \item The user navigates the puzzle
+                \item If a block is selected, the block runs any associated
+                    Block Action.
+                \item These Block Actions may modify the block's properties or
+                    request the addition or removal of blocks, including the
+                    selected block, from the Grid Manager.
+                \item This sequence is repeated until the winning block is
+                    found, the user quits, or a losing condition is met.
+                \item User's actions may be mirrored on an online player's
+                    screen, likewise, separate Puzzle Scenes  may be updated
+                    with any moves made by other players.
             \end{enumerate}
     \end{description}
 %MDFRAMED%\end{mdframed}
@@ -204,6 +239,8 @@ workspace whose primary purpose is word-processing and web browsing.
                     Exact actions depend on the game mode.
                 \item If a block is not present, the space is selected. This
                     is only useful in edit mode.
+                \item The user may end the game at any point through the pause
+                    menu.
             \end{enumerate}
 
     \end{description}
