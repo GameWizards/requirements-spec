@@ -139,7 +139,8 @@ workspace whose primary purpose is word-processing and web browsing.
 %MDFRAMED%\begin{mdframed}
     \subsubsection{Edit puzzle}
     \begin{description}
-        \item[Entry conditions] Internet connection
+        \item[Entry conditions] A puzzle scene must be loaded and edit mode
+            must be activated.
         \item[Exit conditions] None. Will go back to game menu.
         \item[Participating Actors] Online player and local player
         \item[Flow of events]:
@@ -158,8 +159,10 @@ workspace whose primary purpose is word-processing and web browsing.
 %MDFRAMED%\begin{mdframed}
     \subsubsection{Solve puzzle}
     \begin{description}
-        \item[Entry conditions] Internet connection
-        \item[Exit conditions] None. Will go back to game menu.
+        \item[Entry conditions] A puzzle scene must be loaded and solve mode
+            must be activated.
+        \item[Exit conditions] Will go back to game menu. If the game is
+            over, an overview of results is shown and
         \item[Participating Actors] Online player and local player
         \item[Flow of events]:
             \begin{enumerate}
@@ -259,6 +262,13 @@ workspace whose primary purpose is word-processing and web browsing.
 
     \begin{figure}[H]
         \centering
+        \includegraphics[width=6in]{sequence_offline_play.png}
+        \caption{UML Sequence Diagram for an offline game}
+    \end{figure}
+
+
+    \begin{figure}[H]
+        \centering
         \includegraphics[width=6in]{sequence_edit.png}
         \caption{UML Sequence Diagram for editing or creating a puzzle}
     \end{figure}
@@ -276,13 +286,6 @@ workspace whose primary purpose is word-processing and web browsing.
         \includegraphics[width=6in]{sequence_navigate_puzzle.png}
         \caption{UML Sequence Diagram for navigating a puzzle in either edit or
         solve mode}
-    \end{figure}
-
-
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=6in]{sequence_offline_play.png}
-        \caption{UML Sequence Diagram for an offline game}
     \end{figure}
 
 
