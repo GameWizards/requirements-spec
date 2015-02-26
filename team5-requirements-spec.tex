@@ -3,7 +3,7 @@
 \usepackage{hyperref}
 \usepackage{cite}
 \usepackage{float} % for [H] anchoring method
-\renewcommand{\thesubsubsection}{} % no subsubsection numbers
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
 \graphicspath{ {pngs/} }
 %MDFRAMED%\usepackage{mdframed}
 %MDFRAMED%\mdfsetup{nobreak=true}
@@ -305,42 +305,42 @@ workspace whose primary purpose is word-processing and web browsing.
 % should've used \forloop
     \begin{figure}[H]
         \centering
-        \includegraphics[width=6in]{sequence_host_match.png}
+        \includegraphics[width=4.5in]{sequence_host_match.png}
         \caption{UML Sequence Diagram for hosting a multiplayer game.}
     \end{figure}
 
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=6in]{sequence_join_match.png}
+        \includegraphics[width=4.5in]{sequence_join_match.png}
         \caption{UML Sequence Diagram for joining a multiplayer game.}
     \end{figure}
 
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=6in]{sequence_offline_play.png}
+        \includegraphics[width=4.5in]{sequence_offline_play.png}
         \caption{UML Sequence Diagram for an offline game.}
     \end{figure}
 
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=6in]{sequence_edit.png}
+        \includegraphics[width=4.5in]{sequence_edit.png}
         \caption{UML Sequence Diagram for editing or creating a puzzle.}
     \end{figure}
 
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=6in]{sequence_solve.png}
+        \includegraphics[width=4.5in]{sequence_solve.png}
         \caption{UML Sequence Diagram for the puzzle solving process.}
     \end{figure}
 
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=6in]{sequence_navigate_puzzle.png}
+        \includegraphics[width=4.5in]{sequence_navigate_puzzle.png}
         \caption{UML Sequence Diagram for navigating a puzzle in either edit or
         solve mode.}
     \end{figure}
@@ -348,7 +348,7 @@ workspace whose primary purpose is word-processing and web browsing.
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=6in]{sequence_quit.png}
+        \includegraphics[width=4.5in]{sequence_quit.png}
         \caption{UML Sequence Diagram demonstrating game-shutdown.}
     \end{figure}
 
