@@ -21,13 +21,18 @@
 %\end{abstract}
 % overview
 \section{Project Overview}\label{overview-SM}
-Anttris is designed to be a game that offers both creative freedom and a competitive edge. The game revolves around solving puzzle cubes which are composed of different types of blocks. Each block has a special property allowing for sophisticated puzzles to be created. Players can solve the puzzle cubes by interacting with these blocks, doing things from removing blocks from the cube to setting off massive chains!
+Anttris is designed to be a game that offers both creative freedom and a competitive edge. The game revolves around solving puzzle cubes which are composed of different types of blocks. Each block has a special property allowing for sophisticated puzzles to be created. Players can solve the puzzle cubes by interacting with these blocks in many ways, such as by removing blocks or setting off massive chain reactions.
 
 Anttris will include two different game-mode categories: competitive game modes, and single-player game modes. Single-player game modes will focus on clearing puzzle cubes with emphasis placed on efficiency of the solution or solution time. Competitive game modes shift the focus to solving cubes faster than an opponent.
 
-One central game concept to Anttris is the ability to create your own puzzle cubes. Players will be able to create puzzle cubes that they can use when playing competitively. The goal of the game here is no longer to simply solve a cube faster than your opponent; you now also want to \textsl{create} a puzzle that will confuse your opponent long enough to solve theirs first.
+One central game concept to Anttris is the ability to create your own puzzle cubes. Players will be able to create puzzle cubes that they can use when playing competitively. The goal of the game is expanded from simply solving a cube faster than your opponent to \textsl{creating} a puzzle that will challenge your opponent while you solve their puzzle first.
 \subsection{Scope and Objectives}\label{scope-obj-CA}
-Anttris is a simple puzzle game idea that has many elements that can be extended after completion of the core gameplay. The project's scope involves creating self-contained executables that work on many different platforms (including, but not limited to, PC, Mac, and Linux) and can connect to other players through direct connection and, with enough time, through a random connection process involving a host server. In order to complete the project, we must utilize a game development framework that will provide the basic functionality of a 3-dimensional game. To further extend the scope, the game will need to use networking methods to connect two players together for competitive games. The objectives for the project have been planned in a way that the core gameplay mechanics can be completed on their own and will give a functional and complete game in itself. If the core of the project is completed ahead of schedule, then further objectives have been set in place that will allow for the addition of many neat and unique features that will add to the game's fun and replayability factors. The main objectives of the project involve:
+Anttris is a simple puzzle game idea with many elements that can be extended after completion of the core gameplay system. We will create self-contained executables that work on many different platforms (including, but not limited to: PC, Mac, and Linux). A planned extension is support of two-player online games.
+In order to complete the project, we will utilize a game development framework that provides the functionality of a 3-dimensional game.
+
+To further extend the scope, the game will use networking methods to connect two players together for competitive games. Players will be able to connect to other players through direct connection or through a random connection process involving a host server. The peer-to-peer multi-player will be implemented first.
+The objectives for the project have been planned in a way that the core gameplay mechanics can be completed on their own and will give a functional and complete game in itself.
+If the core of the project is completed ahead of schedule, then further objectives have been set in place that will allow for the addition of many neat and unique features that will add to the game's fun and replayability factors. The main objectives of the project involve:
 \begin{itemize}
  \item Completing core gameplay mechanics. This involves completing a single-player game that uses user input to manipulate the game's state into winning the game.
  \item Completing graphical elements. This involves creating and modifying the visual elements of the game from the textures of the 3d objects to the graphical user interface.
@@ -35,7 +40,7 @@ Anttris is a simple puzzle game idea that has many elements that can be extended
  \item Adding additional gameplay mechanics. This involves adding on additional features that we may not have enough time to complete within the project's timeline, but would like to if the base project is completed before scheduled. These ideas involve:
   \begin{itemize}
   \item Adding new block types.
-  \item Adding online connections through a server setup instead of direct connection.
+  \item Adding online connections through a client-server setup instead of through peer-to-peer connections.
   \item Adding new competitive and single player game modes based on the same puzzle mechanics, such as ‘race the clock’ or ‘remove all blocks’.
   \item Adding puzzles that are not cube shaped.
   \end{itemize}
@@ -46,18 +51,19 @@ Anttris is a simple puzzle game idea that has many elements that can be extended
 To make our video game easy to use, it is required that the user interface
 provide intuitive interaction. To be able to make our game accessible to
 the standard user, we have adopted as a requirement that standard
-input devices -- namely a mouse -- be supported.
+input devices -- namely a mouse -- be supported. Touch screen input will
+also be supported in mobile devices.
 
-Graphical User Interfaces are to be simplistic, and not provide an overwhelming
-volume of functionallity. Menu systems should contain no more than five (5)
+Graphical User Interfaces are to be simple, and not provide an overwhelming
+volume of functionality. Menu systems should contain no more than five (5)
 functional options. Menus should follow a logical tree and \textsl{aid} in
 game navigation.
 \subsubsection{Performance Requirements}
 As Anttris is to be professional-grade software, it is both necessary and
 sufficient that it run quickly. As is the standard for video-games, Anttris
 will deliver a minimum of 30 frames per second, and a max of 60 frames per
-second. Any speed outside of this range on a modern-day computer is hereby
-defined unacceptable.
+second. Any speed outside of this range on a modern-day computer is
+unacceptable.
 
 %How do we define a modern day computer? regular old office computer?
 As previously mentioned, Anttris is designed to be a game available to a common
@@ -75,9 +81,9 @@ workspace whose primary purpose is word-processing and web browsing.
 
 \subsection{Actor Descriptions}
     \begin{description}
-        \item[Local player] is somehow in front of the screen and has full
+        \item[Local player] is the local user and has full
             access to the mouse and keyboard or touchscreen interface.
-        \item[Online player] is not in front of the game. There is two-way
+        \item[Online player] is a nonlocal player. There is two-way
             communication between this type of player and the local player.
             There may be 0 or more online players.
         \item[The Host] has special powers, may disconnect other players and
@@ -420,7 +426,7 @@ We have also assigned ourselves various tasks involved in the completion of the 
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=4in]{Assignments.png}
+        \includegraphics[width=5in]{Assignments.png}
         \caption{Current team member assignments. This is subject to change.}
     \end{figure}
 
