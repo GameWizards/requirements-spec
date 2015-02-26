@@ -96,7 +96,8 @@ workspace whose primary purpose is word-processing and web browsing.
     \subsubsection{Host match}
     \begin{description}
         \item[Entry conditions] Internet connection
-        \item[Exit conditions] None. Will return to game menu.
+        \item[Exit conditions] Will return to game menu. All players
+            disconnected or all puzzled have been solved
         \item[Participating Actors] Online player and local player
         \item[Flow of events]:
             \begin{enumerate}
@@ -125,7 +126,9 @@ workspace whose primary purpose is word-processing and web browsing.
     \subsubsection{Join match}
     \begin{description}
         \item[Entry conditions] Internet connection. The menu must be present.
-        \item[Exit conditions] Will return to game menu.
+        \item[Exit conditions]
+        \item[Exit conditions] Will return to game menu. All players
+            disconnected or all puzzled have been solved
         \item[Participating Actors] Online player and local player
         \item[Flow of events]:
             \begin{enumerate}
@@ -148,7 +151,8 @@ workspace whose primary purpose is word-processing and web browsing.
     \subsubsection{Offline game}
     \begin{description}
         \item[Entry conditions] Menu must be present.
-        \item[Exit conditions] Will return to game menu.
+        \item[Exit conditions] Will return to game menu. Puzzle has been
+            solved.
         \item[Participating Actors] Local player
         \item[Flow of events]:
             \begin{enumerate}
@@ -165,6 +169,8 @@ workspace whose primary purpose is word-processing and web browsing.
 
 
 %MDFRAMED%\begin{mdframed}
+    This use case includes the Host Match, Join Match and Offline Game
+    use cases.
     \subsubsection{Edit puzzle}
     \begin{description}
         \item[Entry conditions] A Puzzle Scene must be loaded and edit mode
@@ -197,14 +203,15 @@ workspace whose primary purpose is word-processing and web browsing.
 
 
 %MDFRAMED%\begin{mdframed}
+    This use case includes the Host Match, Join Match and Offline Game
+    use cases.
     \subsubsection{Solve puzzle}
     \begin{description}
         \item[Entry conditions] A Puzzle Scene must be loaded and solve mode
             must be activated.
         \item[Exit conditions] Will return to game menu or puzzle editor.
-            If the game is
-            over, an overview of results will be shown and the steps taken to solve
-            the puzzle may be saved to the disk.
+            If the game is over, an overview of results will be shown and the
+            steps taken to solve the puzzle may be saved to the disk.
         \item[Participating Actors] Online player or local player
         \item[Flow of events]:
             \begin{enumerate}
@@ -226,6 +233,7 @@ workspace whose primary purpose is word-processing and web browsing.
 
 %MDFRAMED%\begin{mdframed}
     \subsubsection{Navigate puzzle}
+    This use case includes the Solve puzzle and Edit puzzle use cases.
     \begin{description}
         \item[Entry conditions] Puzzle scene loaded and permission to move.
             Input devices must be functional.
