@@ -25,18 +25,19 @@ Anttris is designed to be a game that offers both creative freedom and a competi
 
 Anttris will include two different game-mode categories: competitive game modes, and single-player game modes. Single-player game modes will focus on clearing puzzle cubes with emphasis placed on efficiency of the solution or solution time. Competitive game modes shift the focus to solving cubes faster than an opponent.
 
-One central game concept to Anttris is the ability to creat your own puzzle cubes. Players will be able to create puzzle cubes that they can use when playing competitively. The goal of the game here is no longer to simply solve a cube faster than your opponent; you now also want to \textsl{create} a puzzle that will confuse your opponent long enough to solve theirs first.
+One central game concept to Anttris is the ability to create your own puzzle cubes. Players will be able to create puzzle cubes that they can use when playing competitively. The goal of the game here is no longer to simply solve a cube faster than your opponent; you now also want to \textsl{create} a puzzle that will confuse your opponent long enough to solve theirs first.
 \subsection{Scope and Objectives}\label{scope-obj-CA}
-Anttris is a simple puzzle game idea that has many elements that can be extended after completion of the core gameplay. The project’s scope involves creating self-contained executables that work on many different platforms (including, but not limited to, PC, Mac, Linux) and can connect to other players through direct connection and, with enough time, through a random connection process involving a host server. In order to complete the project, we must utilize a game development framework that will provide the basic functionality of a 3-dimensional game. To further extend the scope, the game will need to use networking methods to connect two players together for competitive games. The objectives for the project have been planned in a way that the core gameplay mechanics can be completed on their own and will give a functional and complete game in itself. If the core of the project is completed ahead of schedule, then further objectives have been set in place that will allow for the additional of many neat and unique features that will add to the game’s fun and replayability factors. The main objectives of the project involve:
+Anttris is a simple puzzle game idea that has many elements that can be extended after completion of the core gameplay. The project's scope involves creating self-contained executables that work on many different platforms (including, but not limited to, PC, Mac, and Linux) and can connect to other players through direct connection and, with enough time, through a random connection process involving a host server. In order to complete the project, we must utilize a game development framework that will provide the basic functionality of a 3-dimensional game. To further extend the scope, the game will need to use networking methods to connect two players together for competitive games. The objectives for the project have been planned in a way that the core gameplay mechanics can be completed on their own and will give a functional and complete game in itself. If the core of the project is completed ahead of schedule, then further objectives have been set in place that will allow for the addition of many neat and unique features that will add to the game's fun and replayability factors. The main objectives of the project involve:
 \begin{itemize}
- \item Completing core gameplay mechanics. This involves completing a single-player game that uses user input to manipulate the game’s state into winning the game.
+ \item Completing core gameplay mechanics. This involves completing a single-player game that uses user input to manipulate the game's state into winning the game.
  \item Completing graphical elements. This involves creating and modifying the visual elements of the game from the textures of the 3d objects to the graphical user interface.
- \item Completing multiplayer gameplay mechanics. This involves connecting to and communicating two individual players together on separate machines in order for the players to compete with each other on preset puzzle or puzzle they have made themselves.
- \item Adding additional gameplay mechanics. This involves adding on additional features that we may not have enough time to complete within the project’s timeline, but would like to if the base project is completed before scheduled. These ideas involve:
+ \item Completing multiplayer gameplay mechanics. This involves connecting two individual players on separate machines in order for the players to compete with each other on preset puzzles or puzzles they have made themselves.
+ \item Adding additional gameplay mechanics. This involves adding on additional features that we may not have enough time to complete within the project's timeline, but would like to if the base project is completed before scheduled. These ideas involve:
   \begin{itemize}
   \item Adding new block types.
   \item Adding online connections through a server setup instead of direct connection.
   \item Adding new competitive and single player game modes based on the same puzzle mechanics, such as ‘race the clock’ or ‘remove all blocks’.
+  \item Adding puzzles that are not cube shaped.
   \end{itemize}
 \end{itemize}
 \subsection{Supplementary Requirements}\label{supplementary-reqs-SM}
@@ -291,35 +292,35 @@ workspace whose primary purpose is word-processing and web browsing.
     \begin{figure}[H]
         \centering
         \includegraphics[width=6in]{sequence_host_match.png}
-        \caption{UML Sequence Diagram for hosting a multiplayer game}
+        \caption{UML Sequence Diagram for hosting a multiplayer game.}
     \end{figure}
 
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=6in]{sequence_join_match.png}
-        \caption{UML Sequence Diagram for joining a multiplayer game}
+        \caption{UML Sequence Diagram for joining a multiplayer game.}
     \end{figure}
 
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=6in]{sequence_offline_play.png}
-        \caption{UML Sequence Diagram for an offline game}
+        \caption{UML Sequence Diagram for an offline game.}
     \end{figure}
 
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=6in]{sequence_edit.png}
-        \caption{UML Sequence Diagram for editing or creating a puzzle}
+        \caption{UML Sequence Diagram for editing or creating a puzzle.}
     \end{figure}
 
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=6in]{sequence_solve.png}
-        \caption{UML Sequence Diagram for the puzzle solving process}
+        \caption{UML Sequence Diagram for the puzzle solving process.}
     \end{figure}
 
 
@@ -327,14 +328,14 @@ workspace whose primary purpose is word-processing and web browsing.
         \centering
         \includegraphics[width=6in]{sequence_navigate_puzzle.png}
         \caption{UML Sequence Diagram for navigating a puzzle in either edit or
-        solve mode}
+        solve mode.}
     \end{figure}
 
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=6in]{sequence_quit.png}
-        \caption{UML Sequence Diagram demonstrating game-shutdown}
+        \caption{UML Sequence Diagram demonstrating game-shutdown.}
     \end{figure}
 
 
@@ -375,8 +376,8 @@ The user interface in Anttris will follow the design of most simple game interfa
     \end{figure}
     \begin{figure}[H]
         \centering
-        \includegraphics[width=4in]{GamePauseUI.png}
-        \caption{Editor Menu UI. This leads back to the Editor UI or to the Main Menu. STILL HAVE TO MAKE THIS ONE. }
+        \includegraphics[width=4in]{EditorMenuUI.png}
+        \caption{Editor Menu UI. This leads back to the Editor UI or to the Main Menu. Colored squares are placeholders for different kinds of blocks. }
     \end{figure}
 
 % validation and criteria
@@ -390,7 +391,7 @@ The user interface in Anttris will follow the design of most simple game interfa
 Much progress has been made. We have a working Javascript prototype, a
 workable timeline for Scrum, and we have begun our first sprint. The
 primary objective of this first sprint is to convert the prototype
-into project for the Godot game engine \cite{godot:gameengine}.
+into a project for the Godot game engine \cite{godot:gameengine}.
 
 Currently, we plan to have four sprints of two weeks duration each,
 with weekends acting as slack days. Due to scheduling, the first
@@ -413,6 +414,15 @@ Issues & None & Spring Break! & \specialcell{Deficiencies\\in design} & None & N
 \label{timeline}
 \end{table}
 
+\clearpage
+
+We have also assigned ourselves various tasks involved in the completion of the project. Included below is a table denoting our current assignments.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=4in]{Assignments.png}
+        \caption{Current team member assignments. This is subject to change.}
+    \end{figure}
 
 \bibliographystyle{abbrv}
 \bibliography{team5-requirements-spec}
