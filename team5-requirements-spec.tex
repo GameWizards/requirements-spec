@@ -294,7 +294,19 @@ workspace whose primary purpose is word-processing and web browsing.
 
 \subsection{Behavioral Analysis}\label{behavioral-analysis-HR}
 
-    % Summary....
+Each use case has been realized using a sequence diagram. In addition, an
+activity diagram has been prepared in order to demonstrate the creation of a
+Puzzle instance by the Local Player.
+% Puzzles instantiated in either edit or solve mode, maybe progress is shared
+% with opponents. Players interact through the navigate puzzle use-case,
+% can exit game during puzzle or goto menu or stay until solved, then go to
+% scoreboard
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=4.5in]{activity_all.png}
+        \caption{Puzzle instantiation logic represented by a UML Activity Diagram}
+    \end{figure}
+
 
 % should've used \forloop
     \begin{figure}[H]
