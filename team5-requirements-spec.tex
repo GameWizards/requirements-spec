@@ -290,6 +290,77 @@ workspace whose primary purpose is word-processing and web browsing.
 \subsection{Structural Analysis}\label{struct-analysis-BC}
 % Briefly describe each analysis class (organized according to type - boundary,
 % control, and entity) and class diagrams
+\subsubsection{Boundary Objects}
+Boundary objects are those that the user will be using directly through the user interface. These objects are responsible for displaying the correct display to the user and 
+
+\begin{enumerate}
+\item {\bf Host Match Button.} This object is used by the user through 
+the user interface in order to host a multiplayer game. The hosting 
+player is able to input the necessary fields in order to 	allow another 
+player to connect to their game. The object shares the match ID with 
+another player if they choose to accept the match and is 
+responsible for sending the new process to Select Puzzle to ensure 
+that both players are starting on new unsolved puzzles.
+\item {\bf Join Match Button.} This object is used through the user 
+interface in order to connect to another online player who is hosting 
+a match in the multiplayer game. It is responsible for connecting the 
+two players together and sending the new process to Select Puzzle to 
+ensure that both players are starting  on new unsolved puzzles.
+\item {\bf Select Puzzle.} This object is used by the user through the 
+user interface in order to select which puzzle the player would like 
+to solve the puzzle, edit the puzzle, or send the puzzle to another 
+player when playing in the multiplayer mode. 
+\item {\bf New Game Button.} This object is used by the user through 
+the user interface in order to start a new puzzle in the offline mode. 
+The object will send the new process to Select Puzzle to ensure that 
+the user is starting on an unsolved puzzle.
+\item {\bf Quit Game.} This object is used by the user through the 
+user interface in order to close out of the game completely. It is 
+responsible for sending the quit process to the main node when the 
+button is pressed by the user.
+\item {\bf Event Catcher.} This object is responsible for sending the 
+quit process to the main node when the acceptable keys are inputted to 
+the keyboard.
+\end{enumerate}
+
+\subsubsection{Entity Objects}
+
+The entity objects are those that the user will be able to interact 
+with but are responsible for storing or changing the data about the 
+puzzle.
+
+\begin{enumerate}
+\item {\bf Block.} This object is responsible for creating new blocks 
+and storing the properties about a selected block in the editor and 
+running the action of the selected block in the solving process. 
+\item {\bf PuzzleScene.} This object is responsible for any changes 
+that are made to the configuration of the puzzle in the editor or 
+solving and displaying to the user the changes that are made.
+\item {\bf Camera.} This object is responsible for changing the view 
+in which the puzzle is being viewed. It is responsible for adjusting 
+the view of the puzzle and displaying which blocks can be viewed 
+depending on the location of the gird.
+\end{enumerate}
+
+\subsubsection{Control Objects}
+
+The control objects are those which coordinate the flow of game play by changing what is being displayed to the user based on the processes passed by the entity and boundary objects. 
+
+\begin{enumerate}
+\item {\bf BlockModifier.} This object is responsible for the creation 
+of new blocks, deletion of blocks, and the modification of blocks 
+during the editor process. It is responsible for sending the changes 
+made to the block to the grid manager. 
+\item {\bf GridManager.} This object is responsible for the changes 
+made to the puzzle during the editor and puzzle solving processes. It 
+is responsible for changing the puzzle being displayed based on the 
+action passed to it, and sending the change in properties of the block 
+space after the action has occurred.
+\item {\bf BlockAction.} This object is responsible for executing the 
+action of the block when the user selects it. It is responsible for 
+sending the action based on the properties of the block to the grid 
+manager during the puzzle solving process.
+\end{enumerate}
 
 \subsection{Behavioral Analysis}\label{behavioral-analysis-HR}
 
