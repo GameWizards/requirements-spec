@@ -9,13 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="528.21674"
-   height="578.745"
+   width="558.21252"
+   height="572.31018"
    id="svg4629"
    version="1.1"
    inkscape:version="0.48.5 r10040"
    sodipodi:docname="sequence_navigate_puzzle.svg"
-   inkscape:export-filename="/home/croh/Dropbox/classes/CSE326/requirements-spec/svgs/sequence_quit.png"
+   inkscape:export-filename="/home/croh/Dropbox/classes/CSE326/requirements-spec/pngs/sequence_navigate_puzzle.png"
    inkscape:export-xdpi="400"
    inkscape:export-ydpi="400">
   <defs
@@ -42,13 +42,13 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.6"
-     inkscape:cx="436.52611"
-     inkscape:cy="212.18615"
+     inkscape:zoom="1.4"
+     inkscape:cx="358.83663"
+     inkscape:cy="124.30296"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1303"
+     inkscape:window-width="958"
      inkscape:window-height="1061"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -61,7 +61,7 @@
      inkscape:guide-bbox="true">
     <sodipodi:guide
        orientation="0,1"
-       position="122.22846,419.97092"
+       position="122.22846,413.53608"
        id="guide6365" />
   </sodipodi:namedview>
   <metadata
@@ -525,5 +525,31 @@
          y="370.71274"
          style="font-size:7px;text-align:center;text-anchor:middle"
          id="tspan6529">activate()</tspan></text>
+    <rect
+       style="fill:#e4e4e4;fill-opacity:1;stroke:#000000;stroke-width:0.5110895;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3068"
+       width="14.488911"
+       height="149.48891"
+       x="493.47089"
+       y="339.29605"
+       rx="2.7708421"
+       ry="1.5728775" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text3070"
+       y="326.427"
+       x="500.26962"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"><tspan
+         style="font-size:7px;text-align:center;text-anchor:middle"
+         id="tspan3072"
+         y="326.427"
+         x="500.26962"
+         sodipodi:role="line">Delegated to</tspan><tspan
+         style="font-size:7px;text-align:center;text-anchor:middle"
+         y="335.177"
+         x="500.26962"
+         sodipodi:role="line"
+         id="tspan3074">other use-cases</tspan></text>
   </g>
 </svg>

@@ -3,7 +3,7 @@
 \usepackage{hyperref}
 \usepackage{cite}
 \usepackage{float} % for [H] anchoring method
-\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage[top=1.4in, bottom=1.4in, left=1.4in, right=1.4in]{geometry}
 \graphicspath{ {pngs/} }
 \usepackage{mdframed}
 
@@ -20,7 +20,7 @@
 %\end{abstract}
 % overview
 \section{Project Overview}\label{overview-SM}
-Anttris is designed to be a game that offers both creative freedom and fierce competition. The game revolves around solving puzzle cubes which are composed of different types of blocks. Each block has a special property allowing for sophisticated puzzles to be created. Players can solve the puzzle cubes by interacting with these blocks in many ways, such as by removing blocks or setting off massive chain reactions.
+Anttris is a game that offers both creative freedom and fierce competition. The game revolves around solving puzzle cubes which are composed of different types of blocks. Each block has a special property allowing for sophisticated puzzles to be created. Players can solve the puzzle cubes by interacting with these blocks in many ways, such as by removing blocks or setting off massive chain reactions.
 
 Anttris will include two different game-mode categories: competitive game modes, and single-player game modes. Single-player game modes will focus on clearing puzzle cubes with emphasis placed on efficiency of the solution or solution time. Competitive game modes shift the focus to solving cubes faster than an opponent.
 
@@ -29,7 +29,7 @@ One central game concept to Anttris is the ability to create your own puzzle cub
 Anttris is a simple puzzle game idea with many elements that can be extended after completion of the core gameplay system. We will create self-contained executables that work on many different platforms (including, but not limited to: PC, Mac, and Linux). A planned extension is support of two-player online games.
 In order to complete the project, we will utilize a game development framework that provides the functionality of a 3-dimensional game.
 
-To further extend the scope, the game will use networking methods to connect two players together for competitive games. Players will be able to connect to other players through direct connection or through a random connection process involving a host server. The peer-to-peer multi-player will be implemented first.
+To further extend the scope, the game will use networking methods to connect two players together for competitive games. Players will be able to connect to other players through direct connection or through a random connection process involving a host server. The peer-to-peer multiplayer will be implemented first.
 The objectives for the project have been planned in a way that the core gameplay mechanics can be completed on their own and will give a functional and complete game in itself.
 If the core of the project is completed ahead of schedule, then further objectives have been set in place that will allow for the addition of many neat and unique features that will add to the game's fun and replayability factors. The main objectives of the project involve:
 \begin{itemize}
@@ -47,25 +47,24 @@ If the core of the project is completed ahead of schedule, then further objectiv
 \subsection{Supplementary Requirements}\label{supplementary-reqs-SM}
 % customer reqs
 \subsubsection{Interface Requirements}
-To make our video game easy to use, it is required that the user interface
-provide intuitive interaction. To be able to make our game accessible to
-the standard user, we have adopted as a requirement that standard
-input devices -- namely a mouse -- be supported. Touch screen input will
-also be supported in mobile devices.
+To make our video game easy to use, the user interface must 
+be intuitive to use. To make our game accessible to
+the standard user, our standard input device will be a mouse. Touch screen 
+input will also be supported in mobile devices.
 
 Graphical User Interfaces are to be simple, and not provide an overwhelming
 volume of functionality. Menu systems should contain no more than five (5)
 functional options. Menus should follow a logical tree and \textsl{aid} in
 game navigation.
 \subsubsection{Performance Requirements}
-As Anttris is to be professional-grade software, it is both necessary and
-sufficient that it run quickly. As is the standard for video-games, Anttris
+Anttris is to be professional-grade software, it is necessary  that it run
+quickly. As is the standard for video-games, Anttris
 will deliver a minimum of 30 frames per second, and a max of 60 frames per
-second. Any speed outside of this range on a modern-day computer is
+second. Any speed below this range on a modern-day computer is
 unacceptable.
 
 %How do we define a modern day computer? regular old office computer?
-As previously mentioned, Anttris is designed to be a game available to a common
+Our game Anttris is designed to be available to the common
 computer user. To this end, the game is required to meet the above-defined
 speed standard when tested on computers commonly used in a traditional office
 workspace whose primary purpose is word-processing and web browsing.
@@ -82,7 +81,7 @@ workspace whose primary purpose is word-processing and web browsing.
     \begin{description}
         \item[Local player] is the local user and has full
             access to the mouse and keyboard or touchscreen interface.
-        \item[Online player] is a nonlocal player. There is two-way
+        \item[Online player] is a non-local player. There is two-way
             communication between this type of player and the local player.
             There may be 0 or more online players.
         \item[The Host] has special powers, may disconnect other players and
@@ -114,8 +113,9 @@ workspace whose primary purpose is word-processing and web browsing.
                 \item This Puzzle Selector will create a Puzzle Scene
                 \item The scene will change from the main menu to the Puzzle
                     Scene.
-                \item Additional viewports will be added. These show the
-                    progress of online players.
+                \item Additional view-ports will be added to the game screen. 
+                These show the progress of online players in an interface
+                similar to the local player's puzzle.
 
             \end{enumerate}
     \end{description}
@@ -139,8 +139,9 @@ workspace whose primary purpose is word-processing and web browsing.
                 \item This Puzzle Selector will create a Puzzle Scene
                 \item The scene will change from the main menu to the Puzzle
                     Scene.
-                \item Additional viewports will be added. These show the
-                    progress of online players.
+                \item Additional view-ports will be added to the game screen. 
+                These show the progress of online players in an interface
+                similar to the local player's puzzle.
             \end{enumerate}
     \end{description}
 \end{mdframed}
@@ -240,13 +241,14 @@ workspace whose primary purpose is word-processing and web browsing.
             acted on as soon as possible.
         \item[Participating Actors] Online player and local player.
         \item[Flow of events]:
-            Camera motion.
+        	\\
+            Camera motion:
             \begin{enumerate}
                 \item User drags with a mouse or touchscreen
                 \item The camera changes position
             \end{enumerate}
 
-            Block selection.
+            Block selection:
             \begin{enumerate}
                 \item User clicks with mouse or taps on touchscreen
                 \item The 3D coordinates are translated into a position on
@@ -277,6 +279,8 @@ workspace whose primary purpose is word-processing and web browsing.
                 \item User presses the quit button on a menu
                 \item or User presses appropriate sequence of keys, such as
                     the escape key or the alt and F4 combo.
+                \item Some data may be saved, such as the puzzle being currently 
+                edited.
                 \item The program shuts down gracefully.
             \end{enumerate}
     \end{description}
@@ -291,7 +295,7 @@ workspace whose primary purpose is word-processing and web browsing.
 % Briefly describe each analysis class (organized according to type - boundary,
 % control, and entity) and class diagrams
 \subsubsection{Boundary Objects}
-Boundary objects are those that the user will be using directly through the user interface. These objects are responsible for displaying the correct buttons for the user and directing the player to the type of game play they selected.
+Boundary objects are those that the user will be using directly through the user interface. These objects are responsible for displaying the correct buttons for the user and directing the player to the type of game play they selected. They also manage input actions such as dragging and clicking.
 
 \begin{enumerate}
 \item {\bf Host Match Button.} This object is used by the user through 
@@ -381,42 +385,42 @@ Puzzle instance by the Local Player.
 % should've used \forloop
     \begin{figure}[H]
         \centering
-        \includegraphics[width=4.5in]{sequence_host_match.png}
+        \includegraphics[width=5.5in]{sequence_host_match.png}
         \caption{UML Sequence Diagram for hosting a multiplayer game.}
     \end{figure}
 
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=4.5in]{sequence_join_match.png}
+        \includegraphics[width=5.5in]{sequence_join_match.png}
         \caption{UML Sequence Diagram for joining a multiplayer game.}
     \end{figure}
 
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=4.5in]{sequence_offline_play.png}
+        \includegraphics[width=5.5in]{sequence_offline_play.png}
         \caption{UML Sequence Diagram for an offline game.}
     \end{figure}
 
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=4.5in]{sequence_edit.png}
+        \includegraphics[width=5.5in]{sequence_edit.png}
         \caption{UML Sequence Diagram for editing or creating a puzzle.}
     \end{figure}
 
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=4.5in]{sequence_solve.png}
+        \includegraphics[width=5.5in]{sequence_solve.png}
         \caption{UML Sequence Diagram for the puzzle solving process.}
     \end{figure}
 
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=4.5in]{sequence_navigate_puzzle.png}
+        \includegraphics[width=5.5in]{sequence_navigate_puzzle.png}
         \caption{UML Sequence Diagram for navigating a puzzle in either edit or
         solve mode.}
     \end{figure}
@@ -424,7 +428,7 @@ Puzzle instance by the Local Player.
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=4.5in]{sequence_quit.png}
+        \includegraphics[width=5.5in]{sequence_quit.png}
         \caption{UML Sequence Diagram demonstrating game-shutdown.}
     \end{figure}
 
@@ -520,11 +524,3 @@ We have also assigned ourselves various tasks involved in the completion of the 
 \bibliographystyle{acm}
 \bibliography{team5-requirements-spec}
 \end{document}
-
-
-
-
-
-
-
-
